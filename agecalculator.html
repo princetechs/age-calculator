@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Age Calculator</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+  
+  
+  
+	<div class="container-fluid shadow p-3 mb-5  rounded text-center bg-info p-3 fixed-top">
+		<h4>Age Calculator</h4>
+	</div>
+  
+	<br>
+	
+
+	<div class="container">
+
+	<div class="row mt-5">
+
+		<div class="col-md-6 col-sm-12">
+
+			<div class="row">
+				<div class="col-md-12 col-sm-12 bg-primary shadow p-3 mb-5 bg-white rounded">
+					<h5>ENTER YOUR BIRTH OF DATE :</h5>
+					<!-- birth day inputs -->
+				<form name="birthday">
+          
+					<div class="row">
+						<div class="col-md-4 ">
+							 Date<select  class="form-control" name="day" size="1">
+
+              <option value="1" selected="selected" >1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            </select>
+						</div>
+						<div class="col-md-4 ">
+							 Month<select class="form-control" id="month">
+              <option value="1" selected="selected">January</option>
+              <option value="2">February</option>
+              <option value="3">March</option>
+              <option value="4">April</option>
+              <option value="5">May</option>
+              <option value="6">June</option>
+              <option value="7">July</option>
+              <option value="8">August</option>
+              <option value="9">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+						</div>
+						<div class="col-md-4 ">
+							 Year<select class="form-control" name="year" size="1">
+              <script type="text/javascript">for (var k = startyear; k < endyear; k++)document.write("<option value=" + k + ">" + k + "</option>");
+              </script></select>
+						</div>
+					</div>
+										<br>
+						<br>
+
+					<!-- birth day hours -->
+					<!-- <div class="row">
+						<div class="col-md-4">
+						</div>
+						<div class="col-md-4">
+						</div>
+						<div class="col-md-4">
+						</div>
+					</div> -->
+
+					<!-- today input -->
+					<!-- <div class="row mb-3">
+						<h5>TODAYS DATE IS :</h5>
+						<div class="col-md-4">
+
+							 Date<select  class="form-control" name="da" size="1">
+
+              <option value="1" selected="selected" >1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            </select>
+						</div>
+						<div class="col-md-4">
+							 Month<select class="form-control" id="mont">
+              <option value="1" selected="selected">January</option>
+              <option value="2">February</option>
+              <option value="3">March</option>
+              <option value="4">April</option>
+              <option value="5">May</option>
+              <option value="6">June</option>
+              <option value="7">July</option>
+              <option value="8">August</option>
+              <option value="9">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+						</div>
+						<div class="col-md-4">
+							 Year<select class="form-control" name="yea" size="1">
+              <script type="text/javascript">for (var k = startyear; k < endyear; k++)document.write("<option value=" + k + ">" + k + "</option>");
+              </script></select>
+						</div>
+					</div> -->
+					<!-- today hours -->
+<!-- 
+					<div class="row">
+						<div class="col-md-4">
+						</div>
+						<div class="col-md-4">
+						</div>
+						<div class="col-md-4">
+						</div>
+					</div> -->
+					<!-- button -->
+					<div class="row">
+						<div class="col-md-12  text-center">
+							<button type="button"  class="btn btn-primary btn-lg text-left" name="start" onclick="calage(),myStopFunction()" value="Calculate">Calculate</button>
+						</div>
+					</div>
+
+
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="col-4 ">
+
+
+					<div class="card text-center ">
+  <div class="card-header">YEAR</div>
+  <div class="card-body">
+  	<div
+  data-preset="fan"
+  class="ldBar label-center m-auto"
+  data-value="35"
+  style="width:100%;"
+
+></div>
+  </div>
+  <div class="card-footer">OF 100 YEARS</div>
+</div>
+
+
+</div>
+
+<!-- months -->
+
+<div class="col-4">
+
+  <div class="card text-center">
+  <div class="card-header">MONTHS</div>
+  <div class="card-body">
+
+  	<div 
+  data-preset="fan"
+  class="ldBar label-center m-auto"
+  data-value="35"
+  style="width:100%;"
+
+></div>
+
+  </div>
+  <div class="card-footer">OF 12 MONTHS</div>
+</div>
+
+</div>
+
+<!-- days -->
+<div class="col-4">
+
+					<div class="card text-center">
+  <div class="card-header">DAYS</div>
+  <div class="card-body">
+
+  	<div
+  data-preset="fan"
+  class="ldBar label-center m-auto"
+  data-value="35"
+  style="width:100%;"
+
+></div>
+
+  </div>
+  <div class="card-footer">OF 30 DAYS</div>
+</div>
+</div>
+			</div>
+
+			<div class="row mb-3 ">
+				<div class="col-12 ">
+		 <br>
+        <h5>
+          YOUR AGE IS:
+        </h5>
+        <span id="run"></span>
+        <br>
+        <hr>
+        <br>
+        YOUR ARE LIVING FORM:
+        
+        <br>
+        <hr>
+        <h5>
+          IN MONTH:
+
+        </h5>
+        <span id="months"></span>
+       
+        <br>
+        <hr>
+
+        <h5>
+          IN DAYS:
+        </h5>
+        <br>
+        <span id="days"></span>
+        <br>
+        <hr>
+
+        <h5>
+          IN HOURS:
+        </h5>
+        <br>
+        <span id="hourss"></span>
+        <br>
+		<hr>
+
+        <h5 id="try">
+          IN MINUTES:
+        </h5>
+        <br>
+        <span id="min"></span>
+        <br>
+        <hr>
+
+        <h5>
+          YOUR NEXT BIRTHDAY WILL BE IN:
+        </h5>
+        <span id="bdin"></span>
+        <br>
+				</div>
+			</div>
+		</div>
+	
+		<div class="col-md-6 col-sm-12 ">
+			<div class="row ">
+				<div class="col-md-6 col-sm-12">
+					<div class="ldBar" id="san" 
+  
+ data-type="fill"
+ data-value=""
+  data-aspect-ratio="none" 
+  style="width:100%"
+  data-img-size="100,230"
+   data-img="https://1.bp.blogspot.com/-xl9FfYiZ0ME/X2GOT2D50YI/AAAAAAAAKmg/JyTjn57-yM0SJevbesYNViAHj5W7TOh0gCLcBGAsYHQ/s2000/6thlev.png">
+
+</div>
+
+				</div>
+
+
+
+				<div class="col-md-6 col-sm-12" id="result">
+					ads
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+</html>
